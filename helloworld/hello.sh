@@ -2,7 +2,8 @@
 #SBATCH --get-user-env
 #SBATCH --ntasks 1 --time 0:0:10
 #SBATCH --qos bbshort
-#SBATCH --mail-type "FAIL, END"
+#SBATCH --mail-type "END"
+#SBATCH --mail-type "FAIL"
 #SBATCH --export NONE
 #SBATCH --output "hello-%j.out"
 
