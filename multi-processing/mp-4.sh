@@ -2,7 +2,8 @@
 #SBATCH --get-user-env
 #SBATCH --ntasks 4 --time 0:0:40
 #SBATCH --qos bbshort
-#SBATCH --mail-type "FAIL, END"
+#SBATCH --mail-type "END"
+#SBATCH --mail-type "FAIL"
 #SBATCH --export NONE
 #SBATCH --output "mp-4-%j.out"
 
