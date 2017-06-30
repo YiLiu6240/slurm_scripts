@@ -14,6 +14,3 @@ module load bluebear
 
 module load apps/R/v3.4.0
 Rscript mp.R --n_cores 4
-
-
-
