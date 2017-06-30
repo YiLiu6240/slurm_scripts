@@ -5,7 +5,7 @@
 #SBATCH --mail-type "END"
 #SBATCH --mail-type "FAIL"
 #SBATCH --export NONE
-#SBATCH --output "hello-%j.out"
+#SBATCH --output "logs/hello-%j.out"
 
 # output format
 # normal job: --output "hello-%j.out"  # %j: job ID
@@ -15,6 +15,8 @@ unset SLURM_EXPORT_ENV
 set -e
 module purge
 module load bluebear
+
+mkdir -p logs
 
 module load apps/python3/v3.3.0
 python3 helloworld.py

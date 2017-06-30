@@ -5,7 +5,7 @@
 #SBATCH --mail-type "END"
 #SBATCH --mail-type "FAIL"
 #SBATCH --export NONE
-#SBATCH --output "mp-4-%j.out"
+#SBATCH --output "logs/mp-4-%j.out"
 
 unset SLURM_EXPORT_ENV
 set -e
