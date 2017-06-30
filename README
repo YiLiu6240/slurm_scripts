@@ -1,0 +1,10 @@
+slurm scripts
+=============
+
+Bits and pieces of test scripts.
+
+TODOs
+-----
+
+- [x] hello world script.
+- [x] verification script on multi-processing.
